@@ -9,6 +9,7 @@ def get_driver():
     options.add_argument("no-sandbox")
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_argument("disable-blink-features=AutomationControlled")
+    
 
     driver = webdriver.Chrome(options=options)
     driver.get("http://automated.pythonanywhere.com")
